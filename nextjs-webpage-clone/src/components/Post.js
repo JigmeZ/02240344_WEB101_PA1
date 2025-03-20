@@ -49,7 +49,7 @@ const Post = ({
         {imageUrl && (
           <div className="relative w-full h-[65vh]">
             <Image
-              src={`/images/posts/${imageUrl}`}
+              src={imageUrl}
               alt="Post content"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -105,7 +105,7 @@ export const PostsContainer = () => {
       username: "Dua Lipa", 
       handle: "dualipa", 
       content: "It’s snowing!! ❄️", 
-      imageUrl: "snow-post.jpg",
+      imageUrl: "/images/posts/snow-post.jpg",
       likes: 61_000, 
       comments: 532, 
       shares: 2_800_000 
@@ -114,7 +114,7 @@ export const PostsContainer = () => {
       username: "Elon Musk", 
       handle: "elonmusk", 
       content: "AI is the future.", 
-      imageUrl: "ai-post.jpg",
+      imageUrl: "/images/posts/ai-post.jpg",
       likes: 150_000, 
       comments: 2_000, 
       shares: 3_000_000 
