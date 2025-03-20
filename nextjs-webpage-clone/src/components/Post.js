@@ -17,8 +17,8 @@ const Post = ({
       className="relative h-screen snap-start border-b border-gray-700 p-4"
       style={{ scrollSnapAlign: 'start' }}
     >
-      {/* Enhanced Profile Section */}
-      <div className="absolute top-4 left-4 z-20 flex items-center space-x-4 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+      {/* Profile Section with Adjusted Margins */}
+      <div className="absolute top-6 left-6 z-20 flex items-center space-x-4 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
         <div className="relative">
           <Image 
             src={`/images/profiles/${handle}.png`}
@@ -42,12 +42,12 @@ const Post = ({
         </div>
       </div>
 
-      {/* Content Area */}
-      <div className="h-full flex flex-col justify-center pt-16">
-        <p className="text-white text-2xl px-4 mb-6 font-medium">{content}</p>
+      {/* Content Area with Margin Adjustments */}
+      <div className="h-full flex flex-col justify-center pt-20 mx-4">
+        <p className="text-white text-2xl mb-6 font-medium">{content}</p>
         
         {imageUrl && (
-          <div className="relative w-full h-[70vh]">
+          <div className="relative w-full h-[65vh]">
             <Image
               src={`/images/posts/${imageUrl}`}
               alt="Post content"
@@ -60,8 +60,8 @@ const Post = ({
         )}
       </div>
 
-      {/* Engagement Metrics */}
-      <div className="absolute bottom-20 right-4 space-y-5 text-white z-20">
+      {/* Engagement Metrics with Right Margin */}
+      <div className="absolute bottom-24 right-6 space-y-5 text-white z-20">
         <div className="flex flex-col items-center space-y-1">
           <button className="p-2 hover:bg-white/10 rounded-full transition-all">
             <span className="text-2xl">❤️</span>
@@ -82,8 +82,8 @@ const Post = ({
         </div>
       </div>
 
-      {/* Progress Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+      {/* Centered Progress Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
         {[1, 2, 3].map((_, i) => (
           <div 
             key={i}
